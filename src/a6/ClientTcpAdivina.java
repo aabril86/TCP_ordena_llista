@@ -30,7 +30,7 @@ public class ClientTcpAdivina extends Thread {
 		Socket socket;
 		List<Integer> numberList = new ArrayList<>();
 
-		//omplir llista amb numeros aleatoris
+		//OMPLO LA LLISTA AMB NUMEROS ALEATORIS
 		for (int i = 0; i < 5; i++) {
 			numberList.add((int)(Math.random() * 10));
 		}

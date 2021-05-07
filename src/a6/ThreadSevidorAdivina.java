@@ -41,8 +41,9 @@ public class ThreadSevidorAdivina implements Runnable {
 	}
 	
 	public Llista generaResposta(Llista l) {
-		Collections.sort(l.getNumberList());
+		//al convertir-la a HashSet s'ordena i s'eliminan els elements repetits
 		Set set = new HashSet(l.getNumberList());
+		//Creo una altra amb el contingut del HashSet i substitueixo la llista original amb el contingut modificat
 		List list = new ArrayList(set);
 		l.getNumberList().clear();
 		l.getNumberList().addAll(list);
